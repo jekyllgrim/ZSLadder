@@ -1,0 +1,4 @@
+DoomEdNums
+{
+	16000 = LadderObject
+}
