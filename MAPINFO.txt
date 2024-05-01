@@ -1,4 +1,6 @@
 DoomEdNums
 {
-	16000 = LadderObject
+	16100 = FuncLadder
+	16101 = LadderObjectMid
+	16102 = LadderObjectTop
 }
