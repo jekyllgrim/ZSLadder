@@ -3,4 +3,5 @@ DoomEdNums
 	16100 = FuncLadder
 	16101 = LadderObjectMid
 	16102 = LadderObjectTop
+	16103 = LadderObjectAuto
 }

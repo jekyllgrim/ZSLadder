@@ -3,7 +3,7 @@ Model LadderObjectMid
 	Path "models/ladder"
 	Model 0 "ladder.obj"
 	Scale 1 1 1.2
-	Frame AMRK A 0 0
+	FrameIndex AMRK A 0 0
 }
 
 Model LadderObjectTop
@@ -11,5 +11,5 @@ Model LadderObjectTop
 	Path "models/ladder"
 	Model 0 "ladder_top.obj"
 	Scale 1 1 1.2
-	Frame AMRK A 0 0
+	FrameIndex AMRK A 0 0
 }
