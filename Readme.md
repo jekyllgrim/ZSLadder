@@ -8,6 +8,8 @@ This library/resource offers a dedicated class, `FuncLadder`, that can be placed
 
 The library also comes with 3 classes to handle the visuals and some 3D models in the OBJ format attached to them.
 
+The library also comes with an example map called `ladder_example` (see maps/ladder_example.wad). You can open it in GZDoom by loading the archive and typing `map ladder_example` in the console, or open it in Ultimate Doom Builder to check how it works. This map is not requires to be able to use the library.
+
 #### Included classes
 
 * `FuncLadder`: A ZScript class that handles the actual ladder collision and movement. Lets the player get attached to the ladder by walking or jumping into it.
