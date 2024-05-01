@@ -182,7 +182,7 @@ class FuncLadder : Actor
 			{
 				tracer = attached;
 			}
-			Console.Printf("player attached to ladder");
+			//Console.Printf("player attached to ladder");
 		}
 		attached.bFly = attached.bNoGravity = true;
 		Vector3 ppos = attached.pos;
@@ -213,7 +213,7 @@ class FuncLadder : Actor
 		}
 		ppos.z = Clamp(ppos.z, self.pos.z - height, self.pos.z + height);
 		attached.SetOrigin(ppos, true);
-		Console.Printf("player is attached to ladder. Pos: %.1f, %.1f, %.1f | top: %.1f | bottom: %.1f", attached.pos.x, attached.pos.y, playerZ, top, bottom);
+		//Console.Printf("player is attached to ladder. Pos: %.1f, %.1f, %.1f | top: %.1f | bottom: %.1f", attached.pos.x, attached.pos.y, playerZ, top, bottom);
 	}
 
 	void DropPlayer(bool manual = false)
@@ -246,7 +246,7 @@ class FuncLadder : Actor
 			}
 			else
 			{
-				Console.Printf("player moved outside of ladder: dropping");
+				//Console.Printf("player moved outside of ladder: dropping");
 				DropPlayer();
 			}
 		}
@@ -254,7 +254,7 @@ class FuncLadder : Actor
 		{
 			if (Level.Vec2Diff(tracer.pos.xy, pos.xy).Length() > (radius + tracer.radius) * 1.5)
 			{
-				Console.Printf("previously attached player moved outside of ladder: forgetting");
+				//Console.Printf("previously attached player moved outside of ladder: forgetting");
 				DropPlayer();
 				tracer = null;
 			}
@@ -262,12 +262,12 @@ class FuncLadder : Actor
 		
 		if (attached && (attached.player.cmd.buttons & BT_USE) && !(attached.player.oldbuttons & BT_USE))
 		{
-			Console.Printf("player pressed Use: dropping");
+			//Console.Printf("player pressed Use: dropping");
 			DropPlayer(true);
 		}
 		else if (tracer && tracer.player && (tracer.player.cmd.buttons & BT_USE) && !(tracer.player.oldbuttons & BT_USE))
 		{
-			Console.Printf("previously attached player pressed Use: re-attaching");
+			//Console.Printf("previously attached player pressed Use: re-attaching");
 			AttachPlayer(tracer.player.mo);
 		}
 	}
